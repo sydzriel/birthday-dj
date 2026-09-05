@@ -53,14 +53,14 @@
 
         /* Kad 1: Sampul Surat */
         .envelope-box {
-            text-align: center;
-            margin: 20px auto;
-            display: inline-block;
-            cursor: pointer;
-        }
+    text-align: center;
+    margin: 20px auto;
+    display: table; /* Supaya kotak betul-betul bungkus gambar & duduk center */
+    cursor: pointer;
+}
 
-        .envelope-img {
-    max-width: 250px; /* Boleh ubah saiz ni (contoh: 200px atau 300px) ikut kesesuaian gambar */
+.envelope-img {
+    max-width: 380px; /* Besarkan saiz envelope (asal 250px) */
     width: 100%;
     height: auto;
     display: block;
