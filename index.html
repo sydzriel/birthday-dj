@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday Sayang! 🍒</title>
     
-    <!-- Google Fonts: Playfair Display & Great Vibes (Tulisan Berliku) -->
+    <!-- Google Fonts: Playfair Display & Great Vibes -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
-<style>
-       body {
-            background-image: url('bgpattern.jpg'); /* Nama fail gambar kau */
-            background-repeat: repeat; /* Gambar akan diulang penuh skrin */
-            background-size: 200px; /* Boleh ubah saiz corak ikut kesesuaian */
+    <style>
+        body {
+            background-image: url('bgpattern.jpg');
+            background-repeat: repeat;
+            background-size: 200px;
             font-family: 'Playfair Display', serif;
             margin: 0;
             padding: 20px 10px;
             color: #2b2b2b;
-}
+        }
 
         .page-container {
             max-width: 1050px;
@@ -29,9 +29,9 @@
             gap: 30px;
         }
 
-        /* Cadang Kad Utama */
+        /* Cadang Kad Utama - Warna Kuning Pastel */
         .card {
-            background: #ffffff;
+            background-color: #FDFBD4;
             border: 12px solid #800020; /* Bingkai Burgundy/Red Ribbon */
             border-radius: 16px;
             padding: 35px 30px;
@@ -53,21 +53,21 @@
 
         /* Kad 1: Sampul Surat */
         .envelope-box {
-    text-align: center;
-    margin: 20px auto;
-    display: table; /* Supaya kotak betul-betul bungkus gambar & duduk center */
-    cursor: pointer;
-}
+            text-align: center;
+            margin: 20px auto;
+            display: table;
+            cursor: pointer;
+        }
 
-.envelope-img {
-    max-width: 550px; /* Besarkan saiz envelope (asal 250px) */
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
+        .envelope-img {
+            max-width: 550px;
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
 
         .envelope-box:hover .envelope-img {
             transform: scale(1.03);
@@ -88,20 +88,18 @@
             border-radius: 4px;
         }
 
-        /* Besarkan tajuk "Dear Love," */
-.letter-text h3 {
-    font-size: 1.6em; /* Ditukar daripada saiz asal (biasanya 1.1em) */
-    margin-top: 0;
-    margin-bottom: 12px;
-    color: #1a1a1a;
-}
+        .letter-text h3 {
+            font-size: 1.6em;
+            margin-top: 0;
+            margin-bottom: 12px;
+            color: #1a1a1a;
+        }
 
-/* Besarkan perenggan teks surat */
-.letter-text p {
-    font-size: 1.15em; /* Ditukar dari 0.85em ke 1.15em supaya lebih jelas dibaca */
-    line-height: 1.7;  /* Tambah jarak antara baris supaya tak rapat sangat */
-    margin-bottom: 12px;
-}
+        .letter-text p {
+            font-size: 1.15em;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
 
         /* Kad 3: Galeri 3 Gambar */
         .gallery-grid {
@@ -128,13 +126,13 @@
             text-transform: uppercase;
         }
 
-        /* Resposif untuk Skrin Telefon */
+        /* Responsif Skrin Telefon */
         @media (max-width: 480px) {
             .letter-grid {
                 grid-template-columns: 1fr;
             }
             .gallery-img {
-                height: 120px;
+                height: 180px; /* Disesuaikan untuk telefon supaya tak terlalu panjang */
             }
         }
     </style>
@@ -144,10 +142,9 @@
     <div class="page-container">
 
         <!-- KAD 1: HERO / SAMPUL SURAT -->
-        <div class="">
+        <div class="card">
             <h1>Happy Birthday, Sayang 🍒</h1>
             <div class="envelope-box" onclick="alert('I Love You! ❤️')">
-                <!-- Tukar link gambar sampul surat di bawah jika ada gambar sendiri -->
                 <img src="envelope.png" alt="Envelope" class="envelope-img">
                 <p style="font-size: 0.8em; color: #777; margin-top: 8px;">Tap to open</p>
             </div>
@@ -155,10 +152,9 @@
         </div>
 
         <!-- KAD 2: SURAT UCAPAN & GAMBAR UTAMA -->
-        <div class="">
+        <div class="card">
             <div class="letter-grid">
-                <!-- Tukar gf1.jpg kepada nama gambar girlfriend kau di GitHub -->
-                <img src="cutie.jpg" alt="Gambar Girlfirend" class="letter-img">
+                <img src="cutie.jpg" alt="Gambar Girlfriend" class="letter-img">
                 
                 <div class="letter-text">
                     <h3 style="margin-top:0;">Dear Love,</h3>
@@ -170,11 +166,10 @@
         </div>
 
         <!-- KAD 3: GALERI 3 GAMBAR -->
-        <div class="">
+        <div class="card">
             <h2 class="cursive-title">You too divine to be mine</h2>
             
             <div class="gallery-grid">
-                <!-- Tukar nama fail gambar mengikut gambar yang kau upload ke GitHub -->
                 <img src="1.jpg" alt="Foto 1" class="gallery-img">
                 <img src="2.jpg" alt="Foto 2" class="gallery-img">
                 <img src="3.jpg" alt="Foto 3" class="gallery-img">
