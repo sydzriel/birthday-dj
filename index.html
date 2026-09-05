@@ -54,16 +54,20 @@
         /* Kad 1: Sampul Surat */
         .envelope-box {
             text-align: center;
-            margin: 20px 0;
+            margin: 20px auto;
+            display: inline-block;
             cursor: pointer;
         }
 
         .envelope-img {
-            max-width: 80%;
-            height: auto;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
+    max-width: 250px; /* Boleh ubah saiz ni (contoh: 200px atau 300px) ikut kesesuaian gambar */
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
 
         .envelope-box:hover .envelope-img {
             transform: scale(1.03);
