@@ -132,19 +132,22 @@
                 grid-template-columns: 1fr;
             }
             .gallery-img {
-                height: 180px; /* Disesuaikan untuk telefon supaya tak terlalu panjang */
+                height: 180px;
             }
         }
     </style>
 </head>
 <body>
 
+    <!-- TAG AUDIO UNTUK LAGU BRUNO MARS (Tersembunyi) -->
+    <audio id="bgMusic" src="song.mp3" preload="auto"></audio>
+
     <div class="page-container">
 
         <!-- KAD 1: HERO / SAMPUL SURAT -->
         <div class="card">
             <h1>Happy Birthday, Sayang 🍒</h1>
-            <div class="envelope-box" onclick="alert('Surprise! Okay now sayang baca dulu letter kat bawah ni, then tengok belakang seat sayang okay kekeke')">
+            <div class="envelope-box" onclick="document.getElementById('bgMusic').play(); alert('Surprise! Okay now sayang baca dulu letter kat bawah ni, then tengok belakang seat sayang okay kekeke');">
                 <img src="envelope.png" alt="Envelope" class="envelope-img">
                 <p style="font-size: 0.8em; color: #777; margin-top: 8px;">Tap to open</p>
             </div>
