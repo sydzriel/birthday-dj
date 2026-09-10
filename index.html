@@ -11,6 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
     <style>
+        /* Sediakan fail font .ttf di repository GitHub kau */
+        @font-face {
+            font-family: 'MyCustomFont';
+            src: url('myfont.ttf') format('truetype');
+        }
+
         body {
             background-image: url('bgpattern.jpg');
             background-repeat: repeat;
@@ -39,7 +45,15 @@
             position: relative;
         }
 
-        h1, h2 {
+        /* Tajuk Utama Menggunakan Custom Font .ttf */
+        h1 {
+            text-align: center;
+            margin-top: 0;
+            color: #1a1a1a;
+            font-family: 'MyCustomFont', serif;
+        }
+
+        h2 {
             text-align: center;
             margin-top: 0;
             color: #1a1a1a;
@@ -132,7 +146,7 @@
                 grid-template-columns: 1fr;
             }
             .gallery-img {
-                height: 180px; /* Disesuaikan untuk telefon supaya tak terlalu panjang */
+                height: 180px;
             }
         }
     </style>
@@ -143,7 +157,7 @@
 
         <!-- KAD 1: HERO / SAMPUL SURAT -->
         <div class="card">
-            <h1>Happy 21st Birthday, Sayang ❤️</h1>
+            <h1>Happy 21st Birthday, Sayang <span style="font-family: sans-serif;">❤️</span></h1>
             <div class="envelope-box" onclick="alert('surprise! kesian sayang penat present, now sayang baca dulu letter kat bawah ni okay kekeke!!!')">
                 <img src="envelope.png" alt="Envelope" class="envelope-img">
                 <p style="font-size: 0.8em; color: #777; margin-top: 8px;">Tap to open</p>
@@ -162,7 +176,7 @@
                     <p>i want to thank you from the bottom of my heart for always understanding me, even during times when i struggle to find the right words. your presence in my life has transformed everything for the better, filling my days with a peace and happiness i never knew before. i appreciate you more than words could ever express.</p>
                     <p>as your special month begins, my deepest prayer is for Allah to always protect you, bless your heart with endless peace and guide your path in everything you do. i truly pray that He keeps us together, protecting our bond so we can continue walking this journey side by side for a lifetime.</p>
                     <p>thank you for being my safest home and my favorite person. consider this the beginning of your birthday celebration! haa main gilerrr speaking nyah HAHAHA</p>
-                    <p><strong>i love you so much, today, tomorrow, and forever ❤️❤️❤️ ps: sayang tengok dulu gambar gambar kat bawah ni astu nanti sayang tengok belakang seat you okay?</strong></p>
+                    <p><strong>i love you so much, today, tomorrow, and forever <span style="font-family: sans-serif;">❤️❤️❤️</span> ps: sayang tengok dulu gambar gambar kat bawah ni astu nanti sayang tengok belakang seat you okay?</strong></p>
                 </div>
             </div>
         </div>
